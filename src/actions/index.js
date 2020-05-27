@@ -20,10 +20,10 @@ export const addTodo = text => (
   }
 )
 
-export const toggleTodo = id => (
+export const toggleTodo = index => (
   {
     type: TOGGLE_TODO,
-    id
+    index
   }
 )
 
