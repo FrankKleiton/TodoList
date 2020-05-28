@@ -1,13 +1,13 @@
 import React from 'react';
-import TodoList from './components/TodoList'
+import AddTodo from './containers/AddTodo'
+import VisibleTodoList from './containers/VisibleTodoList'
 
 function App() {
   return (
-    <TodoList todos={[{
-      id: 1,
-      text: 'Study Redux',
-      completed: false
-    }]}  onTodoClick={() => console.log('Hello World!')} />
+    <>
+      <AddTodo />
+      <VisibleTodoList />
+    </>
   );
 }
 
